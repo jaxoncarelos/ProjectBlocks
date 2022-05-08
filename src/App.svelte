@@ -1,5 +1,5 @@
 <script>
-	import ListBlocks from './ListBlocks.svelte'
+	import ListBlocks from './Components/ListBlocks.svelte'
 	import { blockList } from './BlocksStore.js'
 	import { createBlock } from './BlocksStore.js'
 	let newSemiBlockName = "";

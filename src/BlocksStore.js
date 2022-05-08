@@ -1,5 +1,5 @@
 import { writable } from 'svelte/store'
-import BlockClass from './BlockClass'
+import BlockClass from './Classes/BlockClass'
 
 let counter = 0;
 

@@ -1,5 +1,5 @@
 <script>
-    import { blockList } from './BlocksStore'
+    import { blockList } from '../BlocksStore'
     import Block from './Block.svelte'
 </script>
 
