@@ -5,14 +5,16 @@
 	let newSemiBlockName = "";
 	function newBlock()
 	{
-		console.log(newSemiBlockName)
-		createBlock(newSemiBlockName)
-		console.log(blockList)
-		newSemiBlockName = ""
+		if(newSemiBlockName != "") {
+			console.log(newSemiBlockName)
+			createBlock(newSemiBlockName)
+			console.log(blockList)
+			newSemiBlockName = ""
+		}
 	}
 </script>
 
-<main>
+<main class="main">
 	<div class="wrapper">
 		<div class="name">
 			Project Blocks
@@ -33,23 +35,6 @@
 		background-color: lightgrey;
 		color: black;
 		border-color: transparent;
-	}
-	.subname
-	{
-		position: relative;
-		display: flex;
-		justify-content: center;
-		align-content: center;
-		background-color: lightgrey;
-		border-radius: .2em .2em 0 0;
-	}
-	.block
-	{
-		width: 15em;
-		margin: 2em;
-		background-color: aliceblue;
-		border-radius: .2em;
-		height: 10em;
 	}
 	body
 	{

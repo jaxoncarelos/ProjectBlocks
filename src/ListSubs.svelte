@@ -14,24 +14,30 @@
                     element1.remove();
                 }}>
                 <h4>{sub.text}</h4>
-        </div>
+            </div>
         </div>
     {/each}
 
 <style>
+    .sub h4
+    {
+        width: clamp(14em, 85%, 14em);
+        background-color: #cccccc;
+        word-wrap: break-word;
+        text-align: left;
 
+    }
     .sub
     {
         transform: translateY(-2.5em);
         cursor:pointer;
         display: flex;
-
-        max-width: 13em;
+        white-space: initial;
+        width: 97%;
         border-radius: .1rem;
         background-color: #cccccc;
         display: flex;
-        align-items: flex-start;
-        text-align: left;
+        text-align: center;
         position: relative;
         margin: 0;
         font-size: 1em;
