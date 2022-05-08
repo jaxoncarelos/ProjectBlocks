@@ -4,7 +4,7 @@
     let subs = blockClass.sub;
 </script>
     {#each $subs as sub (sub.id)}
-        <div id={blockClass.title} bind:this={deleteSub}>
+        <div id={blockClass.title} >
             <div id={sub.id} class="sub" on:click={() => {
                         $subs = $subs.filter(i => i !== sub)
                 }}>
