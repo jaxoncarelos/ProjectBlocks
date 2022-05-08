@@ -1,17 +1,12 @@
 <script>
     export let blockClass;
-
-    let sub = blockClass.sub;
-    console.log(blockClass);
+    let deleteSub;
+    let subs = blockClass.sub;
 </script>
-    {#each $sub as sub (sub.id)}
-        <div id={blockClass.title}>
+    {#each $subs as sub (sub.id)}
+        <div id={blockClass.title} bind:this={deleteSub}>
             <div id={sub.id} class="sub" on:click={() => {
-                    const element1 = document.getElementById(blockClass.title)
-
-                    element1.childNodes.item(`{sub.id}`).style.display = "none";
-
-                    element1.remove();
+                        $subs = $subs.filter(i => i !== sub)
                 }}>
                 <h4>{sub.text}</h4>
             </div>
